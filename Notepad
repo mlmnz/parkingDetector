@@ -1,0 +1,27 @@
+INSERT
+  dataset_parking.table_dataNow (timestamp,
+    deviceId,
+    distance,
+    presence,
+    updReason )
+VALUES
+  ('2019-02-25 17:19:11.663 UTC', '4e0054000751363130333334', STRUCT(64,
+      65), STRUCT(0,
+      0), 'leaving' )
+
+
+
+UPDATE
+  dataset_parking.table_dataNow
+SET
+  timestamp = '2019-02-25 17:19:11.663 UTC',
+  distance._0 = 15,
+  distance._1 = 1,
+  presence._0 = 0,
+  presence._1 = 0,
+  updReason = "testing"
+ WHERE deviceId = '4e0054000751363130333334'
+
+
+
+ SNR con cabeza > 13
